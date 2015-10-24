@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>数字媒体技术第三次作业</title>
+	<link rel="stylesheet" href="./css/style.css">
+  <script src="./libs/jquery.js" ></script>
+</head>
+<body>
+  <div id="container">
+    <ul id="toolbar">
+      <li class="toolbar-item open-file">打开文件</li>
+      <li class="toolbar-item recover-image">恢复原图</li>
+      <li class="toolbar-item grayscale">灰度设置</li>
+      <li class="toolbar-item scale">缩放</li>
+      <li class="toolbar-item save">另存为</li>
+    </ul>
+
+    <input id="open-file-dialog" type="file" accept=".jpg,.jpeg,.png" />
+    <input id="save-as-dialog" type="file" nwsaveas="result.png" />
+
+    <p id="imageInfo" >请选择左上角的打开文件来加载图片(目前只支持jpg和png图片)</p>
+    <div id="viewer">
+      <canvas></canvas>
+    </div>
+  </div>
+  <script src="./js/main.js"></script>
+</body>
+</html>

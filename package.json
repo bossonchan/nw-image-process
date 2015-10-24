@@ -1,0 +1,12 @@
+{
+  "name": "nw-image",
+  "main": "index.html",
+  "window": {
+    "width": 800,
+    "height": 600,
+    "position": "center",
+    "toolbar": false,
+    "resizable": false,
+    "fullscreen": false
+  }
+}

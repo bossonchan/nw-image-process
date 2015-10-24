@@ -1,0 +1,77 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Microsoft Yahei" sans-serif;
+  font-size: 13px;
+  color: rgb(0, 0, 0);
+  background: rgb(235, 235, 235);
+}
+
+#container {
+  display: block;
+  position: relative;
+
+  width: 800px;
+  height: 600px;
+}
+
+ul#toolbar {
+  display: block;
+  position: relative;
+
+  height: 30px;
+  line-height: 30px;
+  margin-bottom: 50px;
+
+  background: rgba(0, 0, 0, 0.7);
+  list-style-type: none;
+}
+
+li.toolbar-item {
+  display: inline-block;
+  position: relative;
+
+  height: 30px;
+  padding: 0 5px;
+
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+li.toolbar-item:hover {
+  background: rgba(39, 44, 55, 1);
+}
+
+#container input[type=file] {
+  display: none;
+}
+
+#imageInfo {
+  display: block;
+
+  padding: 20px 0;
+
+  text-align: center;
+  font-weight: bold;
+}
+
+#viewer {
+  display: block;
+  position: relative;
+  width: 600px;
+  height: 400px;
+  padding: 20px;
+  margin: 0 auto;
+  border: 1px dashed #000;
+  overflow: scroll;
+}
+
+#viewer canvas {
+  display: block;
+  position: relative;
+  margin: auto auto;
+}
+
