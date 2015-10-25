@@ -33,11 +33,11 @@ $("li.grayscale").unbind("click").bind("click", function() {
   if (!viewer.isImageDrew()) {
     return alert("请先打开图片");
   }
-  var level = prompt("请输入灰度级别(0-255)：", 255);
+  var level = prompt("请输入灰度级别(1-256)：", 256);
   if (level == null) return; // 按了取消
   level = parseInt(level);
 
-  if (isNaN(level) || level > 255 || level < 0) {
+  if (isNaN(level) || level > 256 || level < 1) {
     alert("无效的灰度值!");
   } else {
     viewer.grayScale(level);
